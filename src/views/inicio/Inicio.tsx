@@ -9,10 +9,13 @@ import { classes } from './Inicio'
 const Inicio = (props: any) => {
   const { navigation } = props
 
-  console.log(props)
+  const informacion = {
+    clienteId: 300,
+    totalPagar: 500
+  }
 
   const visitarNosotros = () => {
-    navigation.navigate('Nosotros')
+    navigation.navigate('Nosotros', informacion)
   }
 
   return (
